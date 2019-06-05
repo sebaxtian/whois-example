@@ -34,23 +34,7 @@ const whois = require("whois-promise");
     const ipV6 = await getWhoisInfoIP(ipAdressesV6);
 
     // Whois Example Object Response
-    const whoisExample = {
-      domainName: domainName,
-      ipV4: ipV4,
-      ipV6: ipV6
-    };
-
-    // Whois Example Info
-    console.log(whoisExample);
-
-    // Get Info
-    console.log('Domain: ', whoisExample.domainName);
-    console.log('IP V4: ', whoisExample.ipV4[0].address);
-    console.log('Whois Info: ', whoisExample.ipV4[0].whois);
-    console.log('IP V6: ', whoisExample.ipV6[0].address);
-    console.log('Whois Info: ', whoisExample.ipV6[0].whois);
-
-    // let whoisExample = {
+    // const whoisExample = {
     //   domainName: '',
     //   ipV4: [
     //     {
@@ -71,6 +55,23 @@ const whois = require("whois-promise");
     //     // ...
     //   ]
     // };
+
+    // Whois Example Object Response
+    const whoisExample = {
+      domainName: domainName,
+      ipV4: ipV4,
+      ipV6: ipV6
+    };
+
+    // Whois Example Info
+    console.log(whoisExample);
+
+    // Get Info
+    console.log("Domain: ", whoisExample.domainName);
+    console.log("IP V4: ", whoisExample.ipV4[0].address);
+    console.log("Whois Info: ", whoisExample.ipV4[0].whois);
+    console.log("IP V6: ", whoisExample.ipV6[0].address);
+    console.log("Whois Info: ", whoisExample.ipV6[0].whois);
   } catch (err) {
     console.log("Whois Example Error: ", err);
   }
