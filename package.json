@@ -1,0 +1,24 @@
+{
+  "name": "whois-example",
+  "version": "1.0.0",
+  "description": "Ejemplo de Whois para obtener informacion relacionada con nombre de dominio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Whois",
+    "Domain",
+    "IP",
+    "Network",
+    "Information"
+  ],
+  "author": "Sebastian Rios Sabogal",
+  "license": "MIT",
+  "dependencies": {
+    "domain-info": "^0.1.2",
+    "eslint": "^5.16.0",
+    "whois-promise": "^1.2.2"
+  }
+}
